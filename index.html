@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Attila Hegyeli — Software Developer" />
+    <meta name="theme-color" content="#000000" />
+    <title>Attila Hegyeli</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="is-intro">
+    <!-- Cinematic intro -->
+    <div class="intro" id="intro" aria-hidden="true">
+      <div class="intro__bar intro__bar--top"></div>
+      <div class="intro__bar intro__bar--bottom"></div>
+      <div class="intro__stage">
+        <p class="intro__mark">AH</p>
+        <p class="intro__line intro__line--1">Attila Hegyeli</p>
+        <p class="intro__line intro__line--2">Software Developer</p>
+      </div>
+      <div class="intro__flash"></div>
+    </div>
+
+    <!-- Parallax layers -->
+    <div class="scene" aria-hidden="true">
+      <p class="scene__word" data-speed="0.15">AH</p>
+      <div class="scene__band scene__band--a" data-speed="0.35"></div>
+      <div class="scene__band scene__band--b" data-speed="0.55"></div>
+    </div>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero" id="hero">
+        <div class="hero__letterbox" aria-hidden="true">
+          <span></span><span></span>
+        </div>
+        <div class="shell hero__layout">
+          <div class="hero__copy">
+            <p class="hero__tag">Portfolio</p>
+            <h1 class="hero__name">
+              <span class="hero__line"><span>Attila</span></span>
+              <span class="hero__line"><span>Hegyeli</span></span>
+            </h1>
+            <p class="hero__role">Software Developer / IT Student</p>
+            <p class="hero__blurb">Web · mobile · backend · optimization</p>
+            <div class="hero__cta">
+              <button type="button" class="btn" data-scroll-to="projects">
+                Explore My Work
+              </button>
+              <button type="button" class="btn btn--ghost" data-scroll-to="contact">
+                Contact Me
+              </button>
+            </div>
+          </div>
+
+          <figure class="hero__photo" data-speed="-0.08">
+            <div class="hero__photo-frame">
+              <img
+                id="profile-image"
+                src="assets/images/profile.jpeg"
+                alt="Attila Hegyeli"
+                width="360"
+                height="450"
+              />
+              <div id="profile-fallback" class="hero__fallback">AH</div>
+            </div>
+          </figure>
+        </div>
+        <div class="hero__scroll" aria-hidden="true">
+          <span>Scroll</span>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="block" id="about">
+        <div class="shell block__grid" data-reveal>
+          <h2 class="block__label">About</h2>
+          <p class="block__text">
+            I build practical software — apps, APIs, and systems that solve real
+            problems.
+          </p>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="block" id="projects">
+        <div class="shell">
+          <h2 class="block__label" data-reveal>Projects</h2>
+          <ol class="work" id="projects-grid"></ol>
+        </div>
+      </section>
+
+      <!-- Internship (separate) -->
+      <section class="block" id="internship">
+        <div class="shell intern" data-reveal>
+          <h2 class="block__label">Internship</h2>
+          <div class="intern__card" id="internship-content"></div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="block" id="skills">
+        <div class="shell">
+          <h2 class="block__label" data-reveal>Skills</h2>
+          <p class="skills" id="skills-line" data-reveal></p>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="block" id="contact">
+        <div class="shell block__grid" data-reveal>
+          <h2 class="block__label">Contact</h2>
+          <div class="links">
+            <a id="contact-email" href="#">Email</a>
+            <a id="contact-github" href="#">GitHub</a>
+            <a id="contact-instagram" href="#">Instagram</a>
+            <a id="contact-whatsapp" href="#">WhatsApp</a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="foot">
+        <div class="shell foot__row">
+          <span>Attila Hegyeli</span>
+          <span>&copy; <span id="footer-year"></span></span>
+          <a id="footer-github" href="#">GitHub</a>
+        </div>
+      </footer>
+    </main>
+
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
