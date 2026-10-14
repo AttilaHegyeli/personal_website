@@ -144,10 +144,15 @@
     root.innerHTML = SITE_CONFIG.projects
       .map((p, i) => {
         const num = String(i + 1).padStart(2, "0");
-        const status =
+        const statusLabel =
           p.status === "in-progress"
-            ? `<span class="work__status">In progress</span>`
-            : "";
+            ? "In progress"
+            : p.status === "for company"
+              ? "For company"
+              : "";
+        const status = statusLabel
+          ? `<span class="work__status">${statusLabel}</span>`
+          : "";
         const tags = (p.technologies || []).join(" · ");
         const off = placeholder(p.github);
         const href = off ? "#" : esc(p.github);

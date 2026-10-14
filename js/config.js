@@ -11,6 +11,20 @@ const SITE_CONFIG = {
 
   projects: [
     {
+      title: "pandawash.ro",
+      status: "for company",
+      description: "Client site — responsive and static.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      github: "#",
+    },
+    {
+      title: "Employee Rostering",
+      status: "for company",
+      description: "Shift optimization with OR-Tools.",
+      technologies: ["Python", "OR-Tools"],
+      github: "#",
+    },
+    {
       title: "Desktop AI Agent",
       status: "in-progress",
       description: "Hands-free control with speech and gestures.",
@@ -39,24 +53,10 @@ const SITE_CONFIG = {
       github: "#",
     },
     {
-      title: "PandaWash.ro",
-      status: "completed",
-      description: "Client site — responsive and static.",
-      technologies: ["HTML", "CSS", "JavaScript"],
-      github: "#",
-    },
-    {
       title: "Local Market Webshop",
-      status: "completed",
+      status: "Internship",
       description: "Local-market webshop — React, NestJS, MongoDB.",
       technologies: ["React", "NestJS", "TypeScript", "MongoDB"],
-      github: "#",
-    },
-    {
-      title: "Employee Rostering",
-      status: "completed",
-      description: "Shift optimization with OR-Tools.",
-      technologies: ["Python", "OR-Tools"],
       github: "#",
     },
   ],
